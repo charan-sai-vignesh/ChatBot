@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["python39", "pip"]
+nixPkgs = ["python39Full"]
 
 [phases.install]
 cmds = [
@@ -11,4 +11,5 @@ cmds = [
 
 [start]
 cmd = "waitress-serve --port=$PORT app:app"
+
 
